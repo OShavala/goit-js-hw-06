@@ -6,3 +6,16 @@ const ingredients = [
   'Herbs',
   'Condiments',
 ];
+
+
+const element = document.querySelector('#ingredients');
+  const fragment = document.createDocumentFragment();
+  
+  ingredients.forEach(ingredient => {
+    const li = document.createElement('li');
+    li.textContent = ingredient;
+    li.classList.add('item');
+    fragment.appendChild(li);
+  });
+  
+  element.appendChild(fragment);
