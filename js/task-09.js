@@ -10,6 +10,6 @@ const buttonEl = document.querySelector('.change-color');
 console.log(getRandomHexColor())
 
 buttonEl.addEventListener('click', () => {
-  spanEl.textContent = getRandomHexColor();
-  duvEl.parentNode.style.backgroundColor = getRandomHexColor();
+  duvEl.parentNode.style.backgroundColor= getRandomHexColor();
+  spanEl.textContent = duvEl.parentNode.style.backgroundColor;
 })
